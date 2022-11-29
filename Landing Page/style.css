@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* color to be turned white */
+    color: white;
+}
+
+/* main div element compromising everything */
+#page {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* padding: 0px 150px; */
+}
+
+/* div header  */
+#header {
+    background: #1f2937;
+    padding: 0px 150px;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* justify-content: flex-start; */
+}
+
+.links {
+    margin-left: auto;
+}
+
+/* div 2 block1 with image and title text */
+#block1 {
+    background: #1f2937;
+    padding: 0px 150px;
+    height: 48vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#left1 {
+    width: 50%;
+}
+
+#image {
+    width: 50%;
+    text-align: center;
+    background-color: grey;
+    margin-bottom: 18vh;
+}
+
+.button {
+    background-color: #3882f6;
+}
+
+/* div 3 block2 with some info */
+#block2 {
+    padding: 0px 200px;
+    color: black;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#info {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-img>img {
+    min-height: 150px;
+    width: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.info-img>p {
+    width: 150px;
+}
+
+/* div 3 with quote */
+#block3 {
+    background: #E5E7EB;
+    height: 48vh;
+    padding: 0px 250px;
+    color: black;
+}
+
+#block3>h2 {
+    margin-top: 15vh;
+}
+
+#block3>h3 {
+    text-align: end;
+}
+
+/* div 4 with sign up*/
+#block4 {
+    padding: 0px 150px;
+}
+
+#CTA {
+    margin: 100px 0;
+    background-color: #3882f6;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signup>button {
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* footer */
+#footer {
+    color: white;
+    background: #1f2937;
+    text-align: center;
+}
