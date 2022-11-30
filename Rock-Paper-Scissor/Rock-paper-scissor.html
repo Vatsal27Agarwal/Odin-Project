@@ -6,10 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: brown;
+            color: whitesmoke;
+        }
+
+        .inline h2,
+        h1 {
+            font-size: xx-large;
+            display: inline;
+            margin: 50px;
+        }
+
+        .button {
+            margin: 0 20px;
+            width: 100px;
+            height: 40px;
+        }
+
+        #userChoice,
+        #AIChoice {
+            opacity: 0;
+            margin: 0px 50px;
+        }
+
+        #userChoice {
+            position: relative;
+            left: -30px;
+        }
+
+        #AIChoice {
+            position: relative;
+            left: 50px;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Rock Paper Scissor</h1>
+    <h2>You Vs AI</h2>
+    <p></p>
+    <!-- First one to win 5 Rounds wins the game -->
+    <br>
+    <div id="options">
+        <button class="button" id="rockBtn" value="ROCK" onclick="game(this.value)">ROCK</button>
+        <button class="button" id="paperBtn" value="PAPER" onclick="game(this.value)">PAPER</button>
+        <button class="button" id="scissorBtn" value="SCISSOR" onclick="game(this.value)">SCISSOR</button>
+    </div>
+    <br><br><br>
+    <div class="inline">
+        <h2>YOUR CHOICE</h2>
+        <h2>AI's CHOICE</h2>
+    </div><br>
+    <div class="inline" id="choices">
+        <h1 id="userChoice">YOUR CHOICE</h1>
+        <h1 id="AIChoice">AI's CHOICE</h1>
+    </div><br><br>
 
+    <h2 id="whoWon">Lessssgoooooo</h2>
+    <h2>Rounds Won</h2>
+    <div class="inline" id="result">
+        <h1 id="userResult">USER WON: 0</h1>
+        <h1 id="AIResult">AI WON: 0</h1>
+    </div>
+
+    <script src="Rock-paper-scissor.js"></script>
 </body>
 
 </html>
